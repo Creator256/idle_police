@@ -1,0 +1,21 @@
+
+.gameDiv{
+    padding-top: 5px; 
+    display: inline-block; 
+    white-space: nowrap; 
+    width: 50%;
+    vertical-align: middle;
+}
+
+.columnPadding{
+    margin:10px;
+    padding:10px;
+}
+
+.holder{
+    padding: 5px;
+    width: 50%; 
+    float:left; 
+    margin-left: 50px;
+    margin-top: 10px;
+}

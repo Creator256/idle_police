@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Idle Police</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+
+    <body>
+        <!-- Main Money Header -->
+        <div class="container" style="margin-left: 50px">
+            <div class="gameDiv" style="padding-bottom: 5px">
+                <span style="font-weight:bold; font-size: 2em">Money: </span>
+                <span id="money" style="font-weight:bold; font-size: 2em">0</span>
+            </div>
+        </div>
+        <!-- Action Column -->
+        <div class="row">
+            <div class="col columnPadding">
+                <!-- Ticket Someone -->
+                <div class="container border border-primary holder">
+                    <div>
+                        <button class="btn btn-danger" onclick="ticketSomeone(1)" >Wrtie Ticket</button>
+                        <span style="font-size: 1rem;">Current Ticket Earning: </span>
+                        <span style="font-size: 1rem;" id="ticketEarning">1</span>
+                    </div>
+                    <div class= "gameDiv">
+                        <button class="btn btn-success" onclick="increaseTicket(1)" >Increase Ticket Earning</button>
+                        <span style="font-size: 1rem;">Amount per Ticket:</span>
+                        <span style="font-size: 1rem;" id="ticketPriceCost">1</span>
+                    </div>
+                </div>
+                
+                <!-- Battons -->
+                <div class="container border border-primary holder">
+                    <div>
+                        <button class="btn btn-danger" onclick="arrestSomeone(1)" >Arrest Someone</button>
+                        <span style="font-size: 1rem;">Current Arrest Earning: </span>
+                        <span style="font-size: 1rem;" id="arrestEarning">1</span>
+                    </div>
+                    <div class= "gameDiv">
+                        <button class="btn btn-success" onclick="increaseArrest(1)" >Increase Arrest Earning</button>
+                        <span style="font-size: 1rem;">Amount per Arrest:</span>
+                        <span style="font-size: 1rem;" id="arrestPriceCost">1</span>
+                    </div>
+                </div>
+            </div>
+            <!-- upgrades and stats div -->
+            <div class="col columnPadding">
+                <h4>Stats</h4>
+            </div>
+        </div>
+    </body>
+</html>
