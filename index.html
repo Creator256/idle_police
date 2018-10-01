@@ -16,40 +16,43 @@
                 <span id="money" style="font-weight:bold; font-size: 2em">0</span>
             </div>
         </div>
-        <!-- Action Column -->
-        <div class="row">
-            <div class="col columnPadding">
-                <!-- Ticket Someone -->
-                <div class="container border border-primary holder">
-                    <div>
-                        <button class="btn btn-danger" onclick="ticketSomeone(1)" >Wrtie Ticket</button>
-                        <span style="font-size: 1rem;">Current Ticket Earning: </span>
-                        <span style="font-size: 1rem;" id="ticketEarning">1</span>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Action Column -->
+                <div class="col columnPadding border">
+                    <h4 style="text-align: center">Actions</h4>
+                    <!-- Ticket Someone -->
+                    <div class="container border border-primary holder">
+                        <div>
+                            <button class="btn btn-danger" onclick="ticketSomeone(1)" >Wrtie Ticket</button>
+                            <span style="font-size: 1rem;">Current Ticket Earning: </span>
+                            <span style="font-size: 1rem;" id="ticketEarning">1</span>
+                        </div>
+                        <div class= "gameDiv">
+                            <button class="btn btn-success" onclick="increaseTicket(1)" >Increase Ticket Earning</button>
+                            <span style="font-size: 1rem;">Amount per Ticket:</span>
+                            <span style="font-size: 1rem;" id="ticketPriceCost">1</span>
+                        </div>
                     </div>
-                    <div class= "gameDiv">
-                        <button class="btn btn-success" onclick="increaseTicket(1)" >Increase Ticket Earning</button>
-                        <span style="font-size: 1rem;">Amount per Ticket:</span>
-                        <span style="font-size: 1rem;" id="ticketPriceCost">1</span>
+                    
+                    <!-- Battons -->
+                    <div class="container border border-primary holder">
+                        <div>
+                            <button class="btn btn-danger" onclick="arrestSomeone(1)" >Arrest Someone</button>
+                            <span style="font-size: 1rem;">Current Arrest Earning: </span>
+                            <span style="font-size: 1rem;" id="arrestEarning">1</span>
+                        </div>
+                        <div class= "gameDiv">
+                            <button class="btn btn-success" onclick="increaseArrest(1)" >Increase Arrest Earning</button>
+                            <span style="font-size: 1rem;">Amount per Arrest:</span>
+                            <span style="font-size: 1rem;" id="arrestPriceCost">1</span>
+                        </div>
                     </div>
                 </div>
-                
-                <!-- Battons -->
-                <div class="container border border-primary holder">
-                    <div>
-                        <button class="btn btn-danger" onclick="arrestSomeone(1)" >Arrest Someone</button>
-                        <span style="font-size: 1rem;">Current Arrest Earning: </span>
-                        <span style="font-size: 1rem;" id="arrestEarning">1</span>
-                    </div>
-                    <div class= "gameDiv">
-                        <button class="btn btn-success" onclick="increaseArrest(1)" >Increase Arrest Earning</button>
-                        <span style="font-size: 1rem;">Amount per Arrest:</span>
-                        <span style="font-size: 1rem;" id="arrestPriceCost">1</span>
-                    </div>
+                <!-- upgrades and stats div -->
+                <div class="col columnPadding border">
+                    <h4 style="text-align: center">Stats</h4>
                 </div>
-            </div>
-            <!-- upgrades and stats div -->
-            <div class="col columnPadding">
-                <h4>Stats</h4>
             </div>
         </div>
     </body>

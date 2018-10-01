@@ -1,5 +1,6 @@
 
 var money = 0;
+var ticketsGiven = 0;
 var peopleArrested = 0;
 var crimeRate = 0.0;
 var tickRate = 500;
@@ -31,7 +32,7 @@ var ticketUpgrades = 1;
 
 function ticketSomeone(x){
     earnMoney(x * ticketPerArrest);
-    peopleArrested++;
+    ticketsGiven++;
     checkUpgrades();
 };
 

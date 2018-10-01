@@ -1,0 +1,9 @@
+
+1.) implement arrest
+    arrests need a timer associated with it, either with a rate of crime or other thing
+
+2.) upgrade system for both tickets and arrests
+    need a good way to handle automated arrests, or automated tickets  
+    (maybe a good way for different cop types)
+
+3.) 
