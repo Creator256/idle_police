@@ -14,8 +14,10 @@
 
 .holder{
     padding: 5px;
-    width: 75%; 
-    float:left; 
     margin-left: 50px;
     margin-top: 10px;
+}
+
+.hRule{
+    border-width: 3px;
 }

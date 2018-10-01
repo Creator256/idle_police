@@ -6,4 +6,6 @@
     need a good way to handle automated arrests, or automated tickets  
     (maybe a good way for different cop types)
 
-3.) 
+3.) Handcuffs
+    Buy the Handcuffs -> drop the original button, replace with states about the cuffs, and another button for buying more cuffs
+    -> Handcuff stats should include the Arrest/time

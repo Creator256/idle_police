@@ -37,7 +37,7 @@ function ticketSomeone(x){
 };
 
 function increaseTicket(x){
-    ticketIncCost = Math.ceil(10 * Math.pow(1.2, ticketUpgrades));
+    ticketIncCost = Math.ceil(10 * Math.pow(1.3, ticketUpgrades));
     if(money >= ticketIncCost){
         ticketUpgrades++;
         money -= ticketIncCost;
@@ -45,7 +45,7 @@ function increaseTicket(x){
         document.getElementById("ticketEarning").innerHTML = ticketPerArrest;
         document.getElementById("money").innerHTML = money;
     }
-    var nextCost = Math.ceil(10 * Math.pow(1.2, ticketUpgrades));
+    var nextCost = Math.ceil(10 * Math.pow(1.3, ticketUpgrades));
     document.getElementById("ticketPriceCost").innerHTML = nextCost;
 };
 //////////////////////////////////////////////////////

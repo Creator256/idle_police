@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html>
     <head>
@@ -22,7 +24,7 @@
                 <div class="col columnPadding border">
                     <h4 style="text-align: center">Actions</h4>
                     <!-- Ticket Someone -->
-                    <div class="container border border-primary holder">
+                    <div class="container holder">
                         <div>
                             <button class="btn btn-danger" onclick="ticketSomeone(1)" >Wrtie Ticket</button>
                             <span style="font-size: 1rem;">Current Ticket Earning: </span>
@@ -34,20 +36,29 @@
                             <span style="font-size: 1rem;" id="ticketPriceCost">1</span>
                         </div>
                     </div>
-                    
-                    <!-- Battons -->
-                    <div class="container border border-primary holder">
-                        <div>
-                            <button class="btn btn-danger" onclick="arrestSomeone(1)" >Arrest Someone</button>
-                            <span style="font-size: 1rem;">Current Arrest Earning: </span>
-                            <span style="font-size: 1rem;" id="arrestEarning">1</span>
+                    <hr class="hRule">
+                    <!-- Hand Cuffs -->
+                    <div class="container holder">
+                        <div class="gameDiv" id="buyCuffs">
+                            <button class="btn btn-success btn-lg" onclick="buyCuffs(1)" >Buy Handcuffs</button>
+                            <span style="font-size: 1rem;">Handcuff Cost: </span>
+                            <span style="font-size: 1rem;" id="handCuffCost">1</span>
                         </div>
-                        <div class= "gameDiv">
-                            <button class="btn btn-success" onclick="increaseArrest(1)" >Increase Arrest Earning</button>
-                            <span style="font-size: 1rem;">Amount per Arrest:</span>
-                            <span style="font-size: 1rem;" id="arrestPriceCost">1</span>
+                        <div id="cuffStats" style="display:none">
+                            <div class="gameDiv">
+                                <button class="btn btn-danger" onclick="arrestSomeone(1)" >Arrest Someone</button>
+                                <span style="font-size: 1rem;">Current Arrest Earning: </span>
+                                <span style="font-size: 1rem;" id="arrestEarning">1</span>
+                            </div>
+                            <div class= "gameDiv">
+                                <button class="btn btn-success" onclick="buyCuffs(1)" >Increase Arrest Earning</button>
+                                <span style="font-size: 1rem;">Amount per Arrest:</span>
+                                <span style="font-size: 1rem;" id="arrestPriceCost">1</span>
+                            </div>
                         </div>
                     </div>
+                    <hr class="hRule">
+                    
                 </div>
                 <!-- upgrades and stats div -->
                 <div class="col columnPadding border">
